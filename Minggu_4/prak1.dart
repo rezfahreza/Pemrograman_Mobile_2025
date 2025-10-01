@@ -1,11 +1,10 @@
 void main() {
-  var list = [1, 2, 3];
-  assert(list.length == 3);
-  assert(list[1] == 2);
-  print(list.length);
-  print(list[1]);
+  final List<dynamic> list = List.filled(5, null);
+  
+  list[1]= "Muhammad Fahreza Rohmansyah";
+  list[2]= "2341720151";
 
-  list[1] = 1;
-  assert(list[1] == 1);
-  print(list[1]);
+  print("Isi List: $list");
+  print("Nama: ${list[1]}");
+  print("NIM: ${list[2]}");
 }
