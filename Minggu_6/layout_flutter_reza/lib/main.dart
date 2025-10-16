@@ -76,10 +76,33 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            Image.asset(
-              'assets/lake.jpg',
-              width: 600, height: 240, 
-              fit: BoxFit.cover),
+            Container(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Image.asset(
+                      'assets/lake.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Image.asset(
+                      'assets/lake.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Expanded(
+                    child: Image.asset(
+                      'assets/lake.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             titleSection,
             buttonSection,
             textSection,
